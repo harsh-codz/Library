@@ -170,10 +170,12 @@ section{
 
 .header .header-2{
     background:var(--green);
+   
 }
 
 .header .header-2 .navbar_{
     text-align: center;
+  
 }
 
 .header .header-2 .navbar_ a{
@@ -357,7 +359,7 @@ section{
 }
 
 .icons-container .icons{
-    display: flex;
+
     align-items: center;
     gap:1.5rem;
     padding:2rem 0;
@@ -366,6 +368,7 @@ section{
 .icons-container .icons i{
     font-size: 3.5rem;
     color:var(--green);
+    
 }
 
 .icons-container .icons h3{
@@ -455,6 +458,7 @@ section{
     border:var(--border-hover);
     height:4rem;
     width:4rem;
+   text-decoration:none;
     color:var(--black);
     background: #fff;
 }
@@ -462,6 +466,7 @@ section{
 .swiper-button-next::after,
 .swiper-button-prev::after{
     font-size: 2rem;
+    text-decoration:none;
 }
 
 .swiper-button-next:hover,
@@ -520,11 +525,13 @@ section{
 
 .arrivals .arrivals-slider .box .content h3{
     font-size: 2rem;
+    text-decoration:none;
     color:var(--black);
 }
 
 .arrivals .arrivals-slider .box .content .price{
     font-size: 2.2rem;
+    text-decoration:none;
     color:var(--black);
     padding-bottom: .5rem;
 }
@@ -532,6 +539,7 @@ section{
 .arrivals .arrivals-slider .box .content .price span{
     font-size: 1.5rem;
     color:var(--light-color);
+    text-decoration:none;
     text-decoration: line-through;
 }
 
