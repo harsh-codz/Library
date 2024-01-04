@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toggle Paragraph</title>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <style>
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <p>Discover the magic of books in this captivating library snapshot. Rows of shelves, soft lights, and endless possibilities. Immerse yourself in the joy of reading,
+    where each book is a new adventure waiting to unfold.</p>
+
+  <p class="hidden">Discover the magic of books in this captivating library snapshot. Rows of shelves, soft lights, and endless possibilities. Immerse yourself in the joy of reading,
+    where each book is a new adventure waiting to unfold.</p>
+
+  <a class="btn">read more 5</a>
+
+  <script>
+    $(document).ready(function() {
+      $(".btn").click(function() {
+        // Toggle the visibility of the second paragraph
+        $("p.hidden").toggle();
+
+        // Change button text based on visibility
+        var buttonText = $("p.hidden").is(":visible") ? "read less" : "read more 5";
+        $(".btn").text(buttonText);
+      });
+    });
+  </script>
+
+</body>
+</html>
